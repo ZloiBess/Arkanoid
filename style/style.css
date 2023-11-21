@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("../img/main.jpg");
+    overflow: hidden;
+}
+
+.container {
+    width: 980px;
+    max-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("../img/build.jpg") 100% 100%/ cover no-repeat;
+    box-shadow:
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+}
+
+
+.textStart {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow: 2px 2px 2px green;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.blocks li {
+    display: block;
+    float: left;
+    margin: 0.5%;
+    width: 9%;
+    height: 3vh;
+    background: url("../img/block.jpg") 100% 100% /cover;
+    border: 2px solid greenyellow;
+}
+
+.hearts{
+    list-style: none;
+    position: absolute;
+    bottom: 20vh;
+    left: 1vh;
+    width: 1.5%;
+}
+
+.hearts li{
+    width: 100%;
+    height: 100%;
+}
+
+.hearts li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.removeBlock{
+    border: 1px solid red;
+    position: relative;
+    top: 100vh;
+}
+
+.platform {
+    width: 9%;
+    height: 3vh;
+    background-image: url("../img/platform.jpg");
+    position: absolute;
+    top: 95vh;
+    left: calc(50% - 5%);
+    border: 2px solid black;
+}
+
+.ball {
+    width: 20%;
+    height: 20%;
+    background: url("../img/ball.jpg") center center/ cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 90vh;
+    left: calc(50% - 1%);
+}
+
+.hidden {
+    display: none;
+    
+}
